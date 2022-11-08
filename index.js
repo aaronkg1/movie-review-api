@@ -36,7 +36,7 @@ const startServer = async () => {
 		});
 
 		app.get("/", (_req, res) => {
-			res.render(<h1>Welcome to the scene-it API</h1>);
+			res.render("<h1>Welcome to the scene-it API</h1>");
 		});
 		// Routes
 
