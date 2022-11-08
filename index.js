@@ -12,6 +12,7 @@ import dotenv from "dotenv";
 const app = express();
 dotenv.config();
 const port = process.env.PORT || 4000;
+app.set("port", port);
 const startServer = async () => {
 	try {
 		//Attempt mongodb connection
@@ -53,7 +54,7 @@ const startServer = async () => {
 
 		// Listen for requests
 
-		app.listen(process.env.PORT, () => {
+		app.listen(port, () => {
 			console.log(`🚀 Server listening on port ${port}`);
 		});
 	} catch (error) {
