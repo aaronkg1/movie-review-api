@@ -10,7 +10,7 @@
 	},
 	"scripts": {
 		"serve": "nodemon index.js",
-		"start": "node index.js",
+		"start": "node index",
 		"seed": "node seeds/seeds.js"
 	},
 	"author": "",
