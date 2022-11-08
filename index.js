@@ -11,7 +11,7 @@ import dotenv from "dotenv";
 // Variables
 const app = express();
 dotenv.config();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT;
 const startServer = async () => {
 	try {
 		//Attempt mongodb connection
